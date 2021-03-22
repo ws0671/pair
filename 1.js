@@ -10,12 +10,9 @@ function render() {
   todos.forEach(todo => {
     html +=
     `<li id="${todo.id}">
-  <label><input type="checkbox">${todo.content}</label>
-</li>
-`
-  
+      <label><input type="checkbox">${todo.content}</label>
+    </li>`
   });
-
   return html;
 }
 
