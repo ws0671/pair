@@ -7,8 +7,6 @@ const todos = [
 function sortBy(key) {
   // return key === 'content' ? todos.slice().sort() : todos.slice().sort((a,b) =>(a[key]-b[key]));
   return todos.slice().sort((a,b) => (a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0)));
-  
-
 }
 
 console.log(sortBy('id'));
