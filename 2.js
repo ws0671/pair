@@ -8,7 +8,7 @@ const todos = [
 
 function getValues(key) {
   return todos.map(todo => todo[key]);
-}
+}                    
 
 console.log(getValues('id')); // [3, 2, 1]
 console.log(getValues('content')); // ['HTML', 'CSS', 'Javascript']
