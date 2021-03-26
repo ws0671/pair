@@ -16,4 +16,15 @@ const render = ()=>{
       </li>`
   }).join('');
 }
-render();
+
+document.addEventListener('DOMContentLoaded', render);
+
+const addTodo = () => {
+  todos = [ { id: 3, content: document.querySelector('.input-todo').value, completed: false }, ... todos ];
+  render();
+}
+
+document.querySelector('.input-todo').onkeydown = e => {
+  if ( e.key !== 'Enter') return;
+  addTodo();
+}
